@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Alice from "./components/Alice"
+
+import "./App.css"
+import logo from "./logo.svg"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Casino</h1>
+        <p>Etes-vous prêt à défier le hasard ?</p>
       </header>
+      <body>
+        <Alice />
+      </body>
+      <footer></footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
