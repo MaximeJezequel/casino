@@ -20,14 +20,14 @@
   position: absolute;
   padding: 20px;
   color: #ebcb78;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .alice-logo-subtxt {
   position: relative;
   top: 25vh;
-  color: #ebcb78;
+  color: white;
   font-size: 2rem;
   font-weight: normal;
 }
@@ -41,10 +41,6 @@
 @media (orientation: landscape) {
   .alice-logo-img {
     height: 70vh;
-  }
-
-  .alice-logo-txt {
-    font-size: 2.5rem;
   }
 
   .alice-logo-subtxt {

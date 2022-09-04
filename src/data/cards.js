@@ -1,5 +1,5 @@
 const cards = [
-  "START",
+  "CASINO",
   "Avant de commencer, échangez chaque pièce avec un billet en suivant une flèche",
   "Echangez la pièce de 2€ avec le billet de 10€",
   "Echangez la pièce de 50 cts avec celle de 1€",

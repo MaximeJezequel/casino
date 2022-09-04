@@ -7,16 +7,38 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: black;
-  color: #ebcb78;
+  color: white;
   font-family: "Acme", sans-serif;
-  background-image: url("../assets/casinocard_revert (portrait).jpg");
+  /* background-image: url("../assets/casinocard_revert (portrait).jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .card:hover {
   cursor: pointer;
+}
+
+.card-img {
+  width: 80vw;
+  height: auto;
+}
+
+.top {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.bottom {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.left,
+.right {
+  display: none;
 }
 
 .card-tag::before {
@@ -25,8 +47,8 @@
   margin: auto;
   width: 30px;
   height: 2px;
-  background-color: #ebcb78;
-  transform: translate(-45px, 18px);
+  background-color: white;
+  transform: translate(-45px, 20px);
 }
 
 .card-tag::after {
@@ -35,8 +57,8 @@
   margin: auto;
   width: 30px;
   height: 2px;
-  background-color: #ebcb78;
-  transform: translate(45px, -18px);
+  background-color: white;
+  transform: translate(45px, -20px);
 }
 
 .card-text {
@@ -44,7 +66,7 @@
   justify-content: center;
   align-items: center;
   min-height: 6rem;
-  margin: 20px 30px;
+  margin: 20px 0px;
   padding: 0 30px;
 }
 
@@ -77,13 +99,31 @@
 }
 
 @media (orientation: landscape) {
-  .card {
-    background-image: url("../assets/casinocard_revert.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  .card-img {
+    height: 80vh;
+    width: auto;
+  }
+
+  .left {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  .right {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: rotateZ(180deg);
+  }
+
+  .top,
+  .bottom {
+    display: none;
   }
 
   .card-text {
     padding: 0 20vw;
+    margin: 20px 60px;
   }
 }

@@ -1,22 +1,23 @@
 import React from "react"
 
+import logo from "../assets/casino_spin.png"
 import "./AliceLogo.css"
 
-const AliceLogo = ({ logo, items, setItems }) => {
-  const handleClick = () => {
-    items.length > 13 && setItems(items.filter((item) => item !== items[1]))
+const AliceLogo = ({ index, item, handleOnClick }) => {
+  const restart = (e) => {
+    e.preventDefault()
+    window.location.reload(false)
   }
-
   return (
-    <div className="alice-logo">
+    <div className="alice-logo" key={index}>
       <img
         src={logo}
         className="alice-logo-img"
         alt="logo"
-        onClick={() => window.location.reload(false)}
+        onClick={(e) => restart(e)}
       />
-      <h1 className="alice-logo-txt" onClick={() => handleClick()}>
-        CASIN'O
+      <h1 className="alice-logo-txt" onClick={(e) => handleOnClick()}>
+        {item}
       </h1>
       <p className="alice-logo-subtxt">Prêt⸱e à défier le hasard ?</p>
     </div>
