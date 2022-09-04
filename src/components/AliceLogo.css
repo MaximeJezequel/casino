@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.alice-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Acme", sans-serif;
+}
+
+.alice-logo-img {
+  position: absolute;
+  height: 40vh;
+}
+
+.alice-logo-txt {
+  position: absolute;
+  padding: 20px;
+  color: #ebcb78;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.alice-logo-subtxt {
+  position: relative;
+  top: 25vh;
+  color: #ebcb78;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .alice-logo-img {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+@media (orientation: landscape) {
+  .alice-logo-img {
+    height: 70vh;
+  }
+
+  .alice-logo-txt {
+    font-size: 2.5rem;
+  }
+
+  .alice-logo-subtxt {
+    position: relative;
+    top: 42vh;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

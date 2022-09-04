@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: #ebcb78;
+  font-family: "Acme", sans-serif;
+  background-image: url("../assets/casinocard_revert (portrait).jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-tag::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background-color: #ebcb78;
+  transform: translate(-45px, 18px);
+}
+
+.card-tag::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background-color: #ebcb78;
+  transform: translate(45px, -18px);
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  margin: 20px 30px;
+  padding: 0 30px;
+}
+
+.card-token {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.hotel3 {
+  background-color: #bfbb00;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel5 {
+  background-color: #af3939;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel7 {
+  background-color: #000000;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel9 {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel10 {
+  background-color: #105f7e;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+
+@media (orientation: landscape) {
+  .card {
+    background-image: url("../assets/casinocard_revert.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .card-text {
+    padding: 0 20vw;
+  }
+}
