@@ -18,6 +18,8 @@
 
 .alice-logo-txt {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   color: #ebcb78;
   font-size: 2rem;

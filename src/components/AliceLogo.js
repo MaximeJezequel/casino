@@ -1,9 +1,8 @@
 import React from "react"
 
-import logo from "../assets/casino_spin.png"
 import "./AliceLogo.css"
 
-const AliceLogo = ({ index, item, handleOnClick }) => {
+const AliceLogo = ({ index, logo, item, handleOnClick }) => {
   const restart = (e) => {
     e.preventDefault()
     window.location.reload(false)
@@ -17,9 +16,11 @@ const AliceLogo = ({ index, item, handleOnClick }) => {
         onClick={(e) => restart(e)}
       />
       <h1 className="alice-logo-txt" onClick={(e) => handleOnClick()}>
-        {item}
+        <span>{item.line1}</span>
+        <span>{item.line2}</span>
+        <span>{item.line1}</span>
       </h1>
-      <p className="alice-logo-subtxt">Prêt⸱e à défier le hasard ?</p>
+      <p className="alice-logo-subtxt">{item.line3}</p>
     </div>
   )
 }

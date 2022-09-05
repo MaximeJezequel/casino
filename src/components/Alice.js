@@ -28,7 +28,6 @@ const Alice = () => {
             index={index}
             item={item}
             items={items}
-            setItems={setItems}
             handleOnClick={handleOnClick}
           />
         ))

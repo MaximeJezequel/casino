@@ -2,8 +2,8 @@ import React from "react"
 
 import "./AliceCard.css"
 
-import frame from "../assets/frame1_gold.png"
-import frame2 from "../assets/frame1_gold90.png"
+import frame from "../assets/frame.png"
+import frame2 from "../assets/frame90.png"
 
 const AliceCard = ({ item, newIndex }) => {
   return (
@@ -13,7 +13,11 @@ const AliceCard = ({ item, newIndex }) => {
       <img className="card-img left" src={frame2} alt="frame2" />
       <img className="card-img right" src={frame2} alt="frame2" />
       {newIndex > 0 && <h2 className="card-tag">{newIndex}</h2>}
-      <h2 className="card-text">{item}</h2>
+      <h2 className="card-text">
+        <span>{item.line1}</span>
+        <span>{item.line2}</span>
+        <span>{item.line3}</span>
+      </h2>
       {newIndex > 0 && <div className={`card-token hotel${newIndex}`}></div>}
     </div>
   )
