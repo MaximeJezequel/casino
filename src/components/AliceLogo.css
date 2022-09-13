@@ -16,6 +16,10 @@
   height: 40vh;
 }
 
+.alice-logo-span {
+  user-select: none;
+}
+
 .alice-logo-txt {
   position: absolute;
   display: flex;

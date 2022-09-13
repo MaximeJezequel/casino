@@ -14,9 +14,9 @@ const AliceCard = ({ item, newIndex }) => {
       <img className="card-img right" src={frame2} alt="frame2" />
       {newIndex > 0 && <h2 className="card-tag">{newIndex}</h2>}
       <h2 className="card-text">
-        <span>{item.line1}</span>
-        <span>{item.line2}</span>
-        <span>{item.line3}</span>
+        <span className="card-span">{item.line1}</span>
+        <span className="card-span">{item.line2}</span>
+        <span className="card-span">{item.line3}</span>
       </h2>
       {newIndex > 0 && <div className={`card-token hotel${newIndex}`}></div>}
     </div>

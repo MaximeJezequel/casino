@@ -16,9 +16,9 @@ const AliceLogo = ({ index, logo, item, handleOnClick }) => {
         onClick={(e) => restart(e)}
       />
       <h1 className="alice-logo-txt" onClick={(e) => handleOnClick()}>
-        <span>{item.line1}</span>
-        <span>{item.line2}</span>
-        <span>{item.line1}</span>
+        <span className="alice-logo-span">{item.line1}</span>
+        <span className="alice-logo-span">{item.line2}</span>
+        <span className="alice-logo-span">{item.line1}</span>
       </h1>
       <p className="alice-logo-subtxt">{item.line3}</p>
     </div>
