@@ -14,20 +14,13 @@
 .alice-logo-img {
   position: absolute;
   height: 40vh;
-}
-
-.alice-logo-span {
   user-select: none;
 }
 
-.alice-logo-txt {
+.alice-logo-vegas {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  color: #ebcb78;
-  font-size: 2rem;
-  font-weight: bold;
+  height: 19vh;
+  user-select: none;
 }
 
 .alice-logo-subtxt {
@@ -47,6 +40,10 @@
 @media (orientation: landscape) {
   .alice-logo-img {
     height: 70vh;
+  }
+
+  .alice-logo-vegas {
+    height: 34vh;
   }
 
   .alice-logo-subtxt {
